@@ -8,7 +8,7 @@ class Pminiapoint extends Component{
    canceled = async () =>{
     const {doc} = this.props;
     console.log(doc)
-    let url = "http://localhost:5003/book/delete-doctorbooked/";
+    let url = "https://health-care-back.onrender.com/book/delete-doctorbooked/";
    const response =   axios
       .delete(url + doc._id)
       .then((res) => {

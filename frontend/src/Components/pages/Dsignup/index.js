@@ -84,7 +84,7 @@ storedData =  (event) =>{
         image
     }
    console.log(obj)
-const url = "http://localhost:5003/doctors/create-doctor";
+const url = "https://health-care-back.onrender.com/doctors/create-doctor";
   axios.post(url,obj,{headers:
     {"Content-Type":"application/json",
     Accept:"application/json",

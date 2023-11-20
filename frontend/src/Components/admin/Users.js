@@ -7,7 +7,7 @@ function Users(props) {
     const [user,setUser] = useState([]);
 
    useEffect(()=>{
-    axios.get('http://localhost:5003/admin/getAllUsers')
+    axios.get('https://health-care-back.onrender.com/admin/getAllUsers')
     .then(users => setUser(users.data))
     .catch(err => console.log(err))
    },[])

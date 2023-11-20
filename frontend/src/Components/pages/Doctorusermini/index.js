@@ -22,7 +22,7 @@ class Doctorusermini extends Component{
     const {doc} = this.props;
     const {naprrove} = this.state;
     const obj = {napprovedreason : naprrove,status : "Not Approved",iscancel:true}
-    const url = "http://localhost:5003/book/update-doctorbooked/" + doc._id;
+    const url = "https://health-care-back.onrender.com/book/update-doctorbooked/" + doc._id;
     axios
       .put(url, obj)
       .then((res) => {

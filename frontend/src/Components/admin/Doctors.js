@@ -8,7 +8,7 @@ function Doctors(props) {
   const [doctor,setDoctor] = useState([]);
 
   useEffect(()=>{
-   axios.get('http://localhost:5003/admin/getAllDoctors')
+   axios.get('https://health-care-back.onrender.com/admin/getAllDoctors')
    .then(users => setDoctor(users.data))
    .catch(err => console.log(err))
   },[])
